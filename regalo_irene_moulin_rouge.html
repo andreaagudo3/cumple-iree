@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Para Irene ✦</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600&display=swap');
+:root{--wine:#500b22;--wine2:#26040e;--gold:#e2bd69;--cream:#fff8ee;--ink:#29171d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 10%,#7b173b 0,#500b22 38%,#26040e 100%);color:var(--cream);font-family:Montserrat,sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#e2bd69 1px,transparent 1px);background-size:90px 90px,130px 130px;background-position:10px 20px,50px 70px}
+.opening{min-height:100vh;display:grid;place-items:center;text-align:center;padding:20px}.wrap{width:min(650px,100%)}.eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:11px;color:#f5d98b;margin-bottom:28px}
+.envelope{width:min(390px,85vw);height:260px;margin:auto;position:relative;cursor:pointer;filter:drop-shadow(0 25px 40px #0008)}.back,.left,.right,.bottom{position:absolute;inset:0;border-radius:8px}.back{background:linear-gradient(135deg,#8b1838,#4d0b20);border:1px solid #e2bd6955}.left{clip-path:polygon(0 0,50% 52%,0 100%);background:#7f1734}.right{clip-path:polygon(100% 0,50% 52%,100% 100%);background:#5c0e26}.bottom{clip-path:polygon(0 100%,50% 47%,100% 100%);background:#68102a}.flap{position:absolute;inset:0 0 auto;height:150px;background:linear-gradient(145deg,#9c2347,#67102b);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .9s cubic-bezier(.2,.8,.2,1);z-index:5}.seal{position:absolute;z-index:8;left:50%;top:122px;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:radial-gradient(circle,#f0cc72 0 42%,#a97424 43%);color:#5b0c21;display:grid;place-items:center;font-family:Cinzel;font-weight:700;font-size:22px;transition:.5s}.envelope.open .flap{transform:rotateX(180deg)}.envelope.open .seal{transform:translate(-50%,-50%) scale(.2);opacity:0}.hint{margin-top:28px;opacity:.8;animation:pulse 2s infinite}@keyframes pulse{50%{opacity:.4}}
+#gift{display:none;max-width:1000px;margin:auto;padding:70px 20px 90px}#gift.show{display:block;animation:up 1s ease}@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero{text-align:center;padding:20px 0 70px}.year{color:#f5d98b;font-family:Cinzel;font-size:22px;letter-spacing:.2em}h1{font-family:Cinzel;font-size:clamp(55px,11vw,110px);line-height:.9;margin:18px 0}.subtitle{font-size:clamp(17px,3vw,24px);line-height:1.55;font-weight:400}.divider{width:100px;height:1px;background:var(--gold);margin:35px auto;position:relative}.divider:after{content:"✦";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#500b22;padding:0 12px;color:var(--gold)}
+.card{background:rgba(255,248,238,.98);color:var(--ink);border-radius:24px;padding:clamp(28px,6vw,60px);margin:28px 0;box-shadow:0 25px 70px #0004}.card h2{font-family:Cinzel;color:var(--wine);font-size:clamp(29px,5vw,48px);margin:0 0 18px}.card p{line-height:1.8;color:#4d393f}
+.moulin{background:linear-gradient(#350711e8,#350711f5),radial-gradient(circle at 50% 0,#d92f62,#350711 65%);color:white;text-align:center;border:1px solid #e2bd6955}.moulin h2{color:#f5d98b;font-size:clamp(40px,8vw,76px);margin:12px 0}.kicker{text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:#f5d98b}.tag{font-family:Cinzel;font-size:20px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:35px 0}.info{padding:20px 10px;border:1px solid #e2bd6955;border-radius:16px;background:#ffffff0a}.info strong{display:block;color:#f5d98b;font-family:Cinzel;font-size:23px}.info span{font-size:12px;opacity:.75}.button{display:inline-block;padding:15px 24px;border-radius:999px;background:#e2bd69;color:#3b0b19;text-decoration:none;font-weight:700}.story{display:grid;grid-template-columns:1fr 1.4fr;gap:35px;align-items:center}.big{font-family:Cinzel;color:var(--wine);font-size:100px;line-height:.8}.timeline{border-left:1px solid var(--gold);padding-left:25px;margin-top:35px}.timeline div{margin:0 0 25px;line-height:1.6}.timeline strong{color:var(--wine);font-family:Cinzel}.day{text-align:center;background:linear-gradient(135deg,#f9e7d8,#fff8ed)}.plan{display:grid;gap:12px;margin-top:30px;text-align:left}.row{display:flex;gap:18px;padding:17px;border-radius:14px;background:#6e102b0d}.time{min-width:75px;font-weight:700;color:var(--wine)}.final{text-align:center;padding:50px 10px}.final p{font-family:Cinzel;font-size:clamp(20px,4vw,31px);line-height:1.6}.heart{color:#e45b79;font-size:36px}.fine{font-size:11px;text-align:center;opacity:.55;line-height:1.6}
+@media(max-width:700px){.grid,.story{grid-template-columns:1fr}.card{border-radius:18px}.big{font-size:75px}}
+</style>
+</head>
+<body>
+<section class="opening" id="opening">
+<div class="wrap">
+<div class="eyebrow">Para Irene · desde 1994 ✦</div>
+<div class="envelope" id="env" onclick="openGift()" aria-label="Abrir regalo" role="button">
+<div class="back"></div><div class="left"></div><div class="right"></div><div class="bottom"></div><div class="flap"></div><div class="seal">I</div>
+</div>
+<div class="hint">✦ Haz clic para abrir tu regalo ✦</div>
+</div>
+</section>
+
+<main id="gift">
+<section class="hero">
+<div class="year">1994 → 2026</div>
+<h1>IRENE</h1><div class="divider"></div>
+<p class="subtitle">32 años ya, hermana 😂<br>Y este año he decidido que el regalo no sea una cosa.<br>Que sea <strong>un día juntas</strong>.</p>
+</section>
+
+<section class="card moulin">
+<div class="kicker">Vale, ahora viene la sorpresa 😂</div>
+<h2>MOULIN ROUGE!</h2><div class="tag">El Musical · Madrid · 2027</div>
+<div class="grid">
+<div class="info"><strong>2027</strong><span>El año en que nos vamos</span></div>
+<div class="info"><strong>Madrid</strong><span>Un día de hermanas</span></div>
+<div class="info"><strong>2 🎟️</strong><span>Tú + yo</span></div>
+</div>
+<a class="button" href="https://www.stage.es/musicales/audiciones-moulin-rouge-musical" target="_blank" rel="noopener">✦ Ver el musical</a>
+</section>
+
+<section class="card">
+<div class="story"><div><div class="big">01</div><h2>¿Y qué vamos a ver?</h2></div>
+<div><p><strong>Moulin Rouge! El Musical</strong> lleva al escenario la película de Baz Luhrmann: una historia de amor, música, libertad, espectáculo y muchísimo brillo.</p>
+<p>La historia ya la conocemos, pero llevada a lo grande: música, luces, baile, vestuario y canciones que conocemos de sobra. Básicamente, espectáculo del bueno.</p></div></div>
+<div class="timeline">
+<div><strong>2001</strong><br>Se estrena la película de Baz Luhrmann.</div>
+<div><strong>2019</strong><br>El musical llega a Broadway.</div>
+<div><strong>2021</strong><br>Gana 10 premios Tony®, incluido Mejor Musical.</div>
+<div><strong>2027</strong><br>Llega a Madrid para inaugurar el nuevo Stage Gran Teatro Musical.</div>
+</div>
+</section>
+
+<section class="card day">
+<h2>Pero espera, que no es solo el musical.</h2>
+<p>Porque ya que voy a Madrid, obviamente no vamos a aparecer, ver el musical y cada una para su casa 😂. Quiero pasar <strong>el día entero contigo</strong>.</p>
+<div class="plan">
+<div class="row"><div class="time">☀️ Mañana</div><div><strong>Madrid.</strong><br>Yo voy a Madrid, tú te preparas y nos vamos a pasar el día juntas.</div></div>
+<div class="row"><div class="time">🍝 Comida</div><div><strong>Comer juntas.</strong><br>Porque un día de hermanas necesita una comida que se precie.</div></div>
+<div class="row"><div class="time">✨ Tarde</div><div><strong>Paseo, café, compras o lo que nos apetezca.</strong><br>Sin horarios absurdos. Solo disfrutar.</div></div>
+<div class="row"><div class="time">💃 Noche</div><div><strong>MOULIN ROUGE! EL MUSICAL.</strong><br>Dos entradas y nosotras dos. Que para eso es el regalo 😂.</div></div>
+<div class="row"><div class="time">🥂 Después</div><div><strong>Una copa/cena.</strong><br>Porque evidentemente tendremos que comentar absolutamente todo a la salida.</div></div>
+</div>
+</section>
+
+<section class="card">
+<h2>Y una cosa más...</h2>
+<p>Y después de estos meses, con tu nueva vida de mamá y todo el lío que supone, me apetecía que este regalo fuese simplemente para ti.</p>
+<p><strong>Es para ti.</strong></p>
+<p>Para que tengamos un día de hermanas, sin más. Tú, yo, Madrid y un musical que todavía ni siquiera ha llegado 😂.</p>
+</section>
+
+<section class="final">
+<div class="heart">♥</div>
+<p>Feliz cumpleaños, sis.<br>Este año te regalo un día conmigo ❤️</p>
+<div class="divider"></div>
+<p style="font-family:Montserrat;font-size:15px;opacity:.8">Sí, tendremos que esperar hasta 2027 😂.<br>Pero creo que va a merecer muchísimo la pena.</p>
+</section>
+<div class="fine">Moulin Rouge! El Musical está previsto para estrenarse en Madrid en otoño de 2027. Las fechas todavía están pendientes de confirmación.</div>
+</main>
+
+<script>
+function openGift(){
+  const e=document.getElementById('env');
+  e.classList.add('open');
+  setTimeout(()=>{
+    document.getElementById('opening').style.display='none';
+    document.getElementById('gift').classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+  },950);
+}
+</script>
+</body>
+</html>
